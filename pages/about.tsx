@@ -1,13 +1,11 @@
-import React from 'react';
+import React from "react";
 
 export const AboutPage: React.FC = () => {
   return (
     <>
-      <p>
-        Hello! This is the about page.
-      </p>
+      <p>About Me</p>
     </>
-  )
-}
+  );
+};
 
 export default AboutPage;
