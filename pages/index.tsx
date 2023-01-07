@@ -1,23 +1,8 @@
 import React from "react";
-import { CodeBlock } from "react-code-blocks";
-import { Box, Button } from "@material-ui/core";
+import { useRouter } from "next/router";
 
-export const Home: React.FC = () => {
-  return (
-    <>
-      <div className="App">
-        <Box>
-          <CodeBlock
-            text="Hello"
-            language="typescript"
-            showLineNumbers
-            wrapLines
-          />
-          <Button href="/about">About</Button>
-        </Box>
-      </div>
-    </>
-  );
+export const index: React.FC = () => {
+  const router = useRouter();
+  router.push("/home");
+  return <></>;
 };
-
-export default Home;
