@@ -1,8 +1,8 @@
 import React from "react";
 import { useRouter } from "next/router";
 
-export const index: React.FC = () => {
-  const router = useRouter();
-  router.push("/home");
-  return <></>;
+export const RootPage: React.FC = () => {
+  return <div></div>;
 };
+
+export default RootPage;
