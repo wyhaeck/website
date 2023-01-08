@@ -2,4 +2,4 @@
   from = "/"
   to = "/home"
   status = 302
-  force = false
+  force = true
