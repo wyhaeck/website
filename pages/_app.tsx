@@ -1,8 +1,9 @@
 import React from "react";
 import Head from "next/head";
 import type { AppProps } from "next/app";
-import { CssBaseline } from "@material-ui/core";
+import { CssBaseline, Box } from "@material-ui/core";
 import { Header } from "../src/components/Navbar";
+import "../styles/globals.css";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -17,7 +18,23 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <CssBaseline />
       <Header />
-      <Component {...pageProps} />
+      <Box
+        width="100%"
+        height="100%"
+        display="flex"
+        justifyContent="center"
+        flexDirection="row"
+        style={{ backgroundColor: "#ffffed" }}
+      >
+        <Box
+          display="flex"
+          alignItems="center"
+          flexDirection="column"
+          maxWidth="800px"
+        >
+          <Component {...pageProps} />
+        </Box>
+      </Box>
     </React.Fragment>
   );
 }
