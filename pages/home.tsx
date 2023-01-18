@@ -29,7 +29,7 @@ export const Home: React.FC = () => {
                 height="100%"
                 border-radius="16px"
                 object-fit="hidden"
-                src="Will Senior Photo 2019 copy.jpg"
+                src="Will Senior Photo 2019.jpg"
               />
             </Box>
           </Grid>
