@@ -20,7 +20,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <Header />
       <Box
         width="100%"
-        height="100%"
+        height="calc(100vh - 100px)"
         display="flex"
         justifyContent="center"
         flexDirection="row"

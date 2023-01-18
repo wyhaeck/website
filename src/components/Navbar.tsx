@@ -6,11 +6,19 @@ import {
   Toolbar,
   Button,
   Avatar,
+  Typography,
+  withStyles,
 } from "@material-ui/core";
 import Link from "next/link";
 
 export const Header: React.FC = () => {
   const pages = ["home" /*, "about", "experience"*/];
+
+  const ButtonTypography = withStyles({
+    root: {
+      color: "#ffffed",
+    },
+  })(Typography);
 
   return (
     <AppBar position="static" style={{ background: "#00274C" }}>
@@ -19,7 +27,9 @@ export const Header: React.FC = () => {
           {pages.map((page) => {
             return (
               <Link key={`${page}`} href={`./${page}`}>
-                <Button color="inherit">{page}</Button>
+                <Button color="inherit">
+                  <ButtonTypography>{page}</ButtonTypography>
+                </Button>
               </Link>
             );
           })}
@@ -30,7 +40,9 @@ export const Header: React.FC = () => {
             key={`connect`}
             href={`https://www.linkedin.com/in/william-haeck-041b37191/`}
           >
-            <Button color="inherit">Connect</Button>
+            <Button color="inherit">
+              <ButtonTypography>Connect</ButtonTypography>
+            </Button>
           </a>
         </Box>
         <IconButton>

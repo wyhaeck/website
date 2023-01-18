@@ -1,16 +1,17 @@
 import React from "react";
 import { CodeBlock } from "react-code-blocks";
 import { Box, Grid } from "@material-ui/core";
+import { PageText } from "../src/components";
 
 export const Home: React.FC = () => {
   return (
-    <Box>
-      <h1>William Haeck</h1>
-      {/* <CodeBlock text="Hello" language="typescript" showLineNumbers wrapLines /> */}
-      <Box display="flex" flexDirection="row">
-        <Grid container direction="row" alignItems="center" spacing={2}>
-          <Grid item xs={6}>
-            <p>
+    <Box display="flex" flexDirection="row" height="100%">
+      <Grid container direction="row" alignItems="center" spacing={2}>
+        <Grid item xs={6}>
+          <Box p={2}>
+            <PageText variant="h3">William Haeck</PageText>
+            <PageText>
+              <br />
               {`Hello, and welcome to my website!`}
               <br />
               <br />
@@ -20,21 +21,20 @@ export const Home: React.FC = () => {
               <br />
               <br />
               {/* {`Feel free to take a look around!`} */}
-            </p>
-          </Grid>
-          <Grid item xs={6}>
-            <Box>
-              <img
-                width="100%"
-                height="100%"
-                border-radius="16px"
-                object-fit="hidden"
-                src="Will Senior Photo 2019.jpg"
-              />
-            </Box>
-          </Grid>
+            </PageText>
+          </Box>
         </Grid>
-      </Box>
+        <Grid item xs={6}>
+          <Box p={2}>
+            <img
+              width="100%"
+              height="100%"
+              style={{ borderRadius: "20px" }}
+              src="Will Senior Photo 2019.jpg"
+            />
+          </Box>
+        </Grid>
+      </Grid>
     </Box>
   );
 };
