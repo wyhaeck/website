@@ -2,6 +2,7 @@ import React from "react";
 import { CodeBlock } from "react-code-blocks";
 import { Box, Grid } from "@material-ui/core";
 import { PageText } from "../src/components";
+import { FlipAnimation } from "../src/components/FlipAnimation";
 
 export const Home: React.FC = () => {
   return (
@@ -26,12 +27,16 @@ export const Home: React.FC = () => {
         </Grid>
         <Grid item xs={6}>
           <Box p={2}>
-            <img
+            <FlipAnimation />
+            {/* <img
               width="100%"
               height="100%"
-              style={{ borderRadius: "20px" }}
+              style={{
+                borderRadius: "20px",
+                boxShadow: "2px 2px 3px 3px rgba(0, 0, 0, .3)",
+              }}
               src="Will Senior Photo 2019.jpg"
-            />
+            /> */}
           </Box>
         </Grid>
       </Grid>
