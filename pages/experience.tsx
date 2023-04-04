@@ -68,7 +68,7 @@ export const ExperiencePage: React.FC = () => {
           <Grid item xs={12}>
             <Box p={2} width="100%">
               <Grid container direction="row" spacing={3}>
-                <Grid item xs={8}>
+                <Grid item xs={6}>
                   <Box p={2}>
                     <PageText variant="h3">General Skills</PageText>
                     <PageText>
@@ -78,52 +78,94 @@ export const ExperiencePage: React.FC = () => {
                     </PageText>
                   </Box>
                 </Grid>
-                <Grid item xs={4}>
-                  <Box p={2} height="100%">
-                    <Grid
-                      container
-                      direction="column"
-                      alignItems="center"
-                      justifyContent="center"
-                      spacing={2}
-                    >
-                      <Grid item xs={4}>
-                        <Box
-                          display="flex"
-                          flexDirection="column"
+                <Grid item xs={6}>
+                  <Box
+                    display="flex"
+                    flexDirection="column"
+                    justifyContent="center"
+                    p={2}
+                    height="100%"
+                  >
+                    <Grid container direction="row" spacing={2}>
+                      <Grid item xs={6}>
+                        <Grid
+                          container
+                          direction="column"
+                          alignItems="center"
                           justifyContent="center"
-                          height="100%"
-                          pt={2}
+                          spacing={2}
                         >
-                          <Box>
-                            <img width="100%" height="100%" src="react.png" />
-                          </Box>
-                        </Box>
+                          <Grid item xs={6}>
+                            <Box
+                              display="flex"
+                              flexDirection="column"
+                              justifyContent="center"
+                              height="100%"
+                            >
+                              <Box>
+                                <img
+                                  width="100%"
+                                  height="100%"
+                                  src="react.png"
+                                />
+                              </Box>
+                            </Box>
+                          </Grid>
+                          <Grid item xs={6}>
+                            <Box
+                              display="flex"
+                              flexDirection="column"
+                              justifyContent="center"
+                              height="100%"
+                            >
+                              <Box>
+                                <img
+                                  width="100%"
+                                  height="100%"
+                                  src="graphql.png"
+                                />
+                              </Box>
+                            </Box>
+                          </Grid>
+                        </Grid>
                       </Grid>
-                      <Grid item xs={4}>
-                        <Box
-                          display="flex"
-                          flexDirection="column"
+                      <Grid item xs={6}>
+                        <Grid
+                          container
+                          direction="column"
+                          alignItems="center"
                           justifyContent="center"
-                          height="100%"
+                          spacing={2}
                         >
-                          <Box>
-                            <img width="100%" height="100%" src="graphql.png" />
-                          </Box>
-                        </Box>
-                      </Grid>
-                      <Grid item xs={4}>
-                        <Box
-                          display="flex"
-                          flexDirection="column"
-                          justifyContent="center"
-                          height="100%"
-                          pb={2}
-                        >
-                          <Box>
-                            <img width="100%" height="100%" src="python.png" />
-                          </Box>
-                        </Box>
+                          <Grid item xs={6}>
+                            <Box
+                              display="flex"
+                              flexDirection="column"
+                              justifyContent="center"
+                              height="100%"
+                            >
+                              <Box>
+                                <img
+                                  width="100%"
+                                  height="100%"
+                                  src="python.png"
+                                />
+                              </Box>
+                            </Box>
+                          </Grid>
+                          <Grid item xs={6}>
+                            <Box
+                              display="flex"
+                              flexDirection="column"
+                              justifyContent="center"
+                              height="100%"
+                            >
+                              <Box>
+                                <img width="100%" height="100%" src="git.png" />
+                              </Box>
+                            </Box>
+                          </Grid>
+                        </Grid>
                       </Grid>
                     </Grid>
                   </Box>
