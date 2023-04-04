@@ -50,7 +50,12 @@ const useStyles = makeStyles({
   },
 });
 
-export const FlipAnimation: React.FC = () => {
+interface Props {
+  img1: string;
+  img2: string;
+}
+
+export const FlipAnimation: React.FC<Props> = ({ img1, img2 }) => {
   const classes = useStyles();
 
   return (
@@ -64,7 +69,7 @@ export const FlipAnimation: React.FC = () => {
               borderRadius: "20px",
               filter: "drop-shadow(5px 5px 5px rgba(0, 0, 0, .3))",
             }}
-            src="Will Senior Photo 2019.jpg"
+            src={img1}
           />
         </Box>
         <Box className={classes.back}>
@@ -75,7 +80,7 @@ export const FlipAnimation: React.FC = () => {
               borderRadius: "20px",
               filter: "drop-shadow(5px 5px 5px rgba(0, 0, 0, .3))",
             }}
-            src="Beach Photo.jpg"
+            src={img2}
           />
         </Box>
       </Box>

@@ -21,22 +21,13 @@ export const Home: React.FC = () => {
               development, preferably in the realm of web development or mobile development.`}
               <br />
               <br />
-              {/* {`Feel free to take a look around!`} */}
+              {`Feel free to take a look around!`}
             </PageText>
           </Box>
         </Grid>
         <Grid item xs={6}>
           <Box p={2}>
-            <FlipAnimation />
-            {/* <img
-              width="100%"
-              height="100%"
-              style={{
-                borderRadius: "20px",
-                boxShadow: "2px 2px 3px 3px rgba(0, 0, 0, .3)",
-              }}
-              src="Will Senior Photo 2019.jpg"
-            /> */}
+            <FlipAnimation img1="Stare.jpeg" img2="Beach Photo.jpg" />
           </Box>
         </Grid>
       </Grid>

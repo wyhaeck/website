@@ -2,17 +2,15 @@ import * as React from "react";
 import {
   AppBar,
   Box,
-  IconButton,
   Toolbar,
   Button,
-  Avatar,
   Typography,
   withStyles,
 } from "@material-ui/core";
 import Link from "next/link";
 
 export const Header: React.FC = () => {
-  const pages = ["home" /*, "about", "experience"*/];
+  const pages = ["home", "story" /*"experience"*/];
 
   const ButtonTypography = withStyles({
     root: {
