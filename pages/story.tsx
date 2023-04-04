@@ -10,38 +10,6 @@ export const StoryPage: React.FC = () => {
           <Grid item xs={12}>
             <Box p={2} pt={4} width="100%">
               <Grid container direction="row" spacing={3}>
-                {/* <Grid item xs={6}>
-                  <Grid container direction="column" alignItems="center">
-                    <Grid item xs={6}>
-                      <Box>
-                        <img
-                          width="100%"
-                          height="100%"
-                          // style={{
-                          //   borderRadius: "10px",
-                          //   filter:
-                          //     "drop-shadow(5px 5px 5px rgba(0, 0, 0, .3))",
-                          // }}
-                          src="Computer.JPG"
-                        />
-                      </Box>
-                    </Grid>
-                    <Grid item xs={6}>
-                      <Box>
-                        <img
-                          width="100%"
-                          height="100%"
-                          // style={{
-                          //   borderRadius: "10px",
-                          //   filter:
-                          //     "drop-shadow(5px 5px 5px rgba(0, 0, 0, .3))",
-                          // }}
-                          src="Cuba.jpg"
-                        />
-                      </Box>
-                    </Grid>
-                  </Grid>
-                </Grid> */}
                 <Grid item xs={4}>
                   <Box>
                     <img

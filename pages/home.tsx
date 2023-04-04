@@ -27,7 +27,7 @@ export const Home: React.FC = () => {
         </Grid>
         <Grid item xs={6}>
           <Box p={2}>
-            <FlipAnimation img1="Stare.jpeg" img2="Beach Photo.jpg" />
+            <FlipAnimation img1="Beach Photo.jpg" img2="Stare.jpeg" />
           </Box>
         </Grid>
       </Grid>

@@ -10,7 +10,7 @@ import {
 import Link from "next/link";
 
 export const Header: React.FC = () => {
-  const pages = ["home", "story" /*"experience"*/];
+  const pages = ["home", "story", "experience"];
 
   const ButtonTypography = withStyles({
     root: {
