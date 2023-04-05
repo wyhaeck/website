@@ -89,7 +89,6 @@ export const PortfolioPage: React.FC = () => {
               </Grid>
             </Box>
           </Grid>
-          <Grid item xs={12}></Grid>
         </Grid>
       </Box>
     </Box>
