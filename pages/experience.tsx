@@ -57,7 +57,7 @@ export const ExperiencePage: React.FC = () => {
                     <PageText variant="h3">Legaci</PageText>
                     <PageText>
                       <br />
-                      {`I created React components and webpages that were backed by a PostgreSQL database through GraphQL, using both Next.js and Node.js in the process. I also mentored a software engineer intern in each of the previously stated processes.`}
+                      {`I had the opportunity to work remotely with a startup known as Legaci for two years. Here, I collaborated with a team of software engineers as well as a designer to build Legaci's website, and I worked with the full stack of Legaci's website. This included creating React components and webpages using Node.js and Next.js, and then connecting these pages using raw SQL and GraphQL queries to a PostgreSQL database. My second year, I also mentored a software engineer intern in each of the previously stated processes. `}
                       <br />
                     </PageText>
                   </Box>
