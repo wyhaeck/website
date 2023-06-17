@@ -1,8 +1,8 @@
 import React from "react";
-import { Box, Grid } from "@material-ui/core";
-import { PageText } from "../src/components";
+import { Box, Grid } from "@mui/material";
+import { PageText } from "../../components";
 
-export const PortfolioPage: React.FC = () => {
+export const PortfolioView: React.FC = () => {
   return (
     <Box display="flex" flexDirection="column" height="100%">
       <Box display="flex" flexDirection="row" alignItems="center">
@@ -95,4 +95,4 @@ export const PortfolioPage: React.FC = () => {
   );
 };
 
-export default PortfolioPage;
+export default PortfolioView;

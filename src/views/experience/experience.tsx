@@ -1,8 +1,8 @@
 import React from "react";
-import { Box, Grid } from "@material-ui/core";
-import { PageText } from "../src/components";
+import { Box, Grid } from "@mui/material";
+import { PageText } from "../../components";
 
-export const ExperiencePage: React.FC = () => {
+export const ExperienceView: React.FC = () => {
   return (
     <Box display="flex" flexDirection="column" height="100%">
       <Box display="flex" flexDirection="row" alignItems="center">
@@ -161,4 +161,4 @@ export const ExperiencePage: React.FC = () => {
   );
 };
 
-export default ExperiencePage;
+export default ExperienceView;

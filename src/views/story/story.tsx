@@ -1,14 +1,14 @@
 import React from "react";
-import { Box, Grid } from "@material-ui/core";
-import { PageText } from "../src/components";
+import { Box, Grid } from "@mui/material";
+import { PageText } from "../../components";
 
-export const StoryPage: React.FC = () => {
+export const StoryView: React.FC = () => {
   return (
     <Box display="flex" flexDirection="column" height="100%">
-      <Box display="flex" flexDirection="row" alignItems="center">
+      <Box display="flex" flexDirection="row" alignItems="center" pb={10}>
         <Grid container direction="column" alignItems="center" spacing={2}>
           <Grid item xs={12}>
-            <Box p={2} pt={4} width="100%">
+            <Box p={2} pt={6} width="100%">
               <Grid container direction="row" spacing={3}>
                 <Grid item xs={4}>
                   <Box>
@@ -83,4 +83,4 @@ export const StoryPage: React.FC = () => {
   );
 };
 
-export default StoryPage;
+export default StoryView;
