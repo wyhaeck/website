@@ -21,6 +21,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
           height: "100vh",
           overflowY: "scroll",
           backgroundColor: "#ffffed",
+          borderRadius: 0,
         }}
       >
         <Component {...pageProps} />
