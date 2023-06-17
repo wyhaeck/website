@@ -29,8 +29,14 @@ export const Header: React.FC = () => {
 
   return (
     <Box>
-      <AppBar position="static" sx={{ zIndex: "3", background: "#00274C" }}>
-        <Toolbar sx={{ zIndex: "3", justifyContent: "center" }}>
+      <AppBar position="static">
+        <Toolbar
+          sx={{
+            zIndex: "3",
+            justifyContent: "center",
+            background: "#00274C",
+          }}
+        >
           {pages.map((page) => {
             return (
               <Button
@@ -39,7 +45,7 @@ export const Header: React.FC = () => {
                 onClick={() => handleClick(page)}
                 sx={{
                   "&:hover": {
-                    backgroundColor: "#707070",
+                    backgroundColor: "#293d55",
                   },
                 }}
               >
@@ -60,7 +66,7 @@ export const Header: React.FC = () => {
               color="inherit"
               sx={{
                 "&:hover": {
-                  backgroundColor: "#707070",
+                  backgroundColor: "#293d55",
                 },
               }}
             >

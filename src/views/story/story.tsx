@@ -72,7 +72,7 @@ export const StoryView: React.FC = () => {
                 {`I've also worked to build a movement as a student leader in Cru, a Christian organization on campus that I've been a part of my entire time at Michigan. My spiritual life has always guided me, and I've been able to put this into action as I've been able to lead small groups in maturing and growing in our faith. I've also had the chance to go on multiple mission trips, as is shown in the last photo above (taken in Cuba!).`}
                 <br />
                 <br />
-                {`I will be graduating from Michigan at the end of April of 2023. My story has always been one of building, and I can't wait to to see what the next stage will bring!`}
+                {`In April of 2023, I graduated from Michigan with a Bachelor's in Cognitive Science and minors in Computer Science and History. I'm now looking for my first opportunity to demonstrate what I've learned while continuing to grow further in my technical skills and abilities. My story has always been one of building, and I can't wait to to see what possibilities the next stage will bring!`}
                 <br />
               </PageText>
             </Box>

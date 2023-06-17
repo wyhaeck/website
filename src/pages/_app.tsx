@@ -15,12 +15,12 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
         />
       </Head>
-      {/* <CssBaseline /> */}
       <Paper
         sx={{
           height: "100vh",
           overflowY: "scroll",
           backgroundColor: "#ffffed",
+          borderRadius: 0,
         }}
       >
         <Component {...pageProps} />
