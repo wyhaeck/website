@@ -15,8 +15,8 @@ export const HomeView: React.FC = () => {
               {`Hello, and welcome to my website!`}
               <br />
               <br />
-              {`My name is William Haeck, and I'm a Senior at the University of Michigan
-              studying Cognitive Science. I'm currently looking for a position in the field of software 
+              {`My name is William Haeck, and I'm a graduate of the University of Michigan
+              in Cognitive Science on the Computation track. I'm currently looking for a position in the field of software 
               development, preferably in the realm of web development or mobile development.`}
               <br />
               <br />
