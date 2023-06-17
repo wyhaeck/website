@@ -29,6 +29,7 @@ const Home: NextPage = () => {
           alignItems="center"
           flexDirection="column"
           maxWidth="800px"
+          pt={8}
         >
           {view === "home" && <HomeView />}
           {view === "story" && <StoryView />}

@@ -28,56 +28,68 @@ export const Header: React.FC = () => {
   });
 
   return (
-    <Box>
-      <AppBar position="static">
-        <Toolbar
+    <Box display="flex" justifyContent="center">
+      <Box pt={2} width="25%">
+        <AppBar
+          position="fixed"
           sx={{
-            zIndex: "3",
-            justifyContent: "center",
-            background: "#00274C",
+            width: "30%",
+            borderRadius: 32,
+            top: 16,
+            left: "50%",
+            marginLeft: "-15%",
           }}
         >
-          {pages.map((page) => {
-            return (
+          <Toolbar
+            sx={{
+              zIndex: "3",
+              justifyContent: "center",
+              background: "#00274C",
+              borderRadius: 32,
+            }}
+          >
+            {pages.map((page) => {
+              return (
+                <Button
+                  key={page}
+                  color="inherit"
+                  onClick={() => handleClick(page)}
+                  sx={{
+                    "&:hover": {
+                      backgroundColor: "#293d55",
+                    },
+                  }}
+                >
+                  <ButtonTypography>
+                    {page.charAt(0).toUpperCase() + page.slice(1)}
+                  </ButtonTypography>
+                </Button>
+              );
+            })}
+            <a
+              style={{ color: "inherit", textDecoration: "inherit" }}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={`connect`}
+              href={`https://www.linkedin.com/in/william-haeck-041b37191/`}
+            >
               <Button
-                key={page}
                 color="inherit"
-                onClick={() => handleClick(page)}
                 sx={{
                   "&:hover": {
                     backgroundColor: "#293d55",
                   },
                 }}
               >
-                <ButtonTypography>
-                  {page.charAt(0).toUpperCase() + page.slice(1)}
-                </ButtonTypography>
+                <ButtonTypography>Connect</ButtonTypography>
               </Button>
-            );
-          })}
-          <a
-            style={{ color: "inherit", textDecoration: "inherit" }}
-            target="_blank"
-            rel="noopener noreferrer"
-            key={`connect`}
-            href={`https://www.linkedin.com/in/william-haeck-041b37191/`}
-          >
-            <Button
-              color="inherit"
-              sx={{
-                "&:hover": {
-                  backgroundColor: "#293d55",
-                },
-              }}
-            >
-              <ButtonTypography>Connect</ButtonTypography>
-            </Button>
-          </a>
-          {/* <IconButton>
+            </a>
+            {/* <IconButton>
           <Avatar alt="Will Haeck" src="profile.png" />
         </IconButton> */}
-        </Toolbar>
-      </AppBar>
+          </Toolbar>
+        </AppBar>
+      </Box>
     </Box>
   );
 };
