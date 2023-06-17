@@ -1,10 +1,9 @@
 import React from "react";
 import { CodeBlock } from "react-code-blocks";
-import { Box, Grid } from "@material-ui/core";
-import { PageText } from "../src/components";
-import { FlipAnimation } from "../src/components/FlipAnimation";
+import { Box, Grid } from "@mui/material";
+import { PageText, FlipAnimation } from "../../components";
 
-export const Home: React.FC = () => {
+export const HomeView: React.FC = () => {
   return (
     <Box display="flex" flexDirection="row" height="100%">
       <Grid container direction="row" alignItems="center" spacing={2}>
@@ -35,4 +34,4 @@ export const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default HomeView;

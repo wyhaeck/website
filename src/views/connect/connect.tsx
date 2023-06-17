@@ -1,6 +1,6 @@
 import React from "react";
 
-export const ConnectPage: React.FC = () => {
+export const ConnectView: React.FC = () => {
   return (
     <>
       <p>Hello! This is the connect page.</p>
@@ -8,4 +8,4 @@ export const ConnectPage: React.FC = () => {
   );
 };
 
-export default ConnectPage;
+export default ConnectView;
