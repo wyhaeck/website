@@ -11,7 +11,7 @@ const useStyles = makeStyles({
     justifyContent: "center",
     borderRadius: "20px",
     transition: "all 0.8s ease-in",
-    animation: "$rotation 25s infinite",
+    animation: "$rotation 15s infinite",
     transformStyle: "preserve-3d",
     position: "relative",
   },
@@ -36,14 +36,14 @@ const useStyles = makeStyles({
     "0%": {
       transform: "perspective(3000px) rotateY(0deg)",
     },
-    "20%": {
-      transform: "perspective(3000px) rotateY(180deg)",
+    "25%": {
+      transform: "perspective(3000px) rotateY(0deg)",
     },
     "50%": {
       transform: "perspective(3000px) rotateY(180deg)",
     },
-    "70%": {
-      transform: "perspective(3000px) rotateY(0deg)",
+    "75%": {
+      transform: "perspective(3000px) rotateY(180deg)",
     },
     "100%": {
       transform: "perspective(3000px) rotateY(0deg)",

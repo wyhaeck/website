@@ -26,7 +26,7 @@ export const HomeView: React.FC = () => {
         </Grid>
         <Grid item xs={6}>
           <Box p={2}>
-            <FlipAnimation img1="Beach Photo.jpg" img2="Stare.jpeg" />
+            <FlipAnimation img1="Stare.jpeg" img2="Beach Photo.jpg" />
           </Box>
         </Grid>
       </Grid>
