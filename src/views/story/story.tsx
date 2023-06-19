@@ -19,7 +19,7 @@ export const StoryView: React.FC = () => {
                         borderRadius: "10px",
                         filter: "drop-shadow(5px 5px 5px rgba(0, 0, 0, .3))",
                       }}
-                      src="Computer.JPG"
+                      src="Computer.jpeg"
                     />
                   </Box>
                 </Grid>
