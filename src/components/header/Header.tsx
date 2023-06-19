@@ -1,12 +1,6 @@
 import React, { useCallback } from "react";
-import {
-  AppBar,
-  Box,
-  Toolbar,
-  Button,
-  Typography,
-  styled,
-} from "@mui/material";
+import { AppBar, Box, Toolbar, Button } from "@mui/material";
+import { ButtonTypography } from "../styled/ButtonTypography";
 import useViewsStore from "../../stores/useViewsStore";
 
 export const Header: React.FC = () => {
@@ -21,11 +15,6 @@ export const Header: React.FC = () => {
     },
     [setView]
   );
-
-  const ButtonTypography = styled(Typography)({
-    color: "#ffffed",
-    textTransform: "none",
-  });
 
   return (
     <Box>
