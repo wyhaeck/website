@@ -49,7 +49,7 @@ export const Header: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             key={`connect`}
-            href={`https://www.linkedin.com/in/william-haeck-041b37191/`}
+            href={`https://www.linkedin.com/in/willhaeck/`}
           >
             <Button
               color="inherit"
